@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-""" A program that returns a list of lists of integers representing the Pascals triangle of n """
+""" A program that returns a list of lists of
+    integers representing the Pascals triangle of n """
+
+
 def pascal_triangle(n):
     if n <= 0:
         return []
-    
+
     pascal_triangle = []
     for i in range(n):
         row = [1]
@@ -12,6 +15,5 @@ def pascal_triangle(n):
                 row.append(pascal_triangle[i-1][j-1] + pascal_triangle[i-1][j])
             row.append(1)
         pascal_triangle.append(row)
-    
-    return pascal_triangle
 
+    return pascal_triangle
