@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   // Check if startString is empty
-  if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
+  if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string' || startString === '') {
     return '';
   }
   // Filter set values that start with the specified string
