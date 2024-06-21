@@ -5,6 +5,10 @@ Program to determine the fewest number of coins
 
 
 def makeChange(coins, total):
+    """
+    function to determine the fewest number of coins
+    needed to meet a given amount.
+    """
     if total <= 0:
         return 0
     dp = [float('inf')] * (total + 1)
